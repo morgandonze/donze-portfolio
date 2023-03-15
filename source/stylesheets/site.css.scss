@@ -1,24 +1,102 @@
+@mixin clearfix {
+  &:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-  background-color: #fbc547;
-  color: #333;
+  background-color: #343B49;
+  color: #ab82ff;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
+  // padding: 18vh 1rem;
   text-align: center;
 }
 
 a {
-  color: rgba(#000, 0.7);
+  color: #ab82ff;
 
   &:focus,
   &:hover {
-    color: rgba(#000, 0.6);
+    color: #ab82ff;
   }
 }
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+h1 {
+  font-family: 'Capriola', sans-serif;
+  font-size: 80px;
+}
+
+.l-wrap {
+  max-width: 90rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header {
+  @include clearfix;
+  display: flex;
+  align-items: baseline; 
+}
+
+.title {
+  width: percentage(9/12);
+  padding-right: 10px;
+  padding-left: 10px;
+  float: left;
+  text-align: left;
+}
+
+.nav {
+  @include clearfix;
+  width: percentage(3/12);
+  padding-right: 10px;
+  padding-left: 10px;
+  
+  div {
+    float: right;
+
+    a {
+      font-family: 'Capriola', sans-serif;
+      font-size: 40px;
+      float: left;
+      margin-left: 20px;
+    }
+  }
+}
+
+// GRID
+
+.grid {
+  @include clearfix;
+}
+
+.column {
+  @include clearfix;
+  width: percentage(1/12);
+  padding-right: 10px;
+  padding-left: 10px;
+  float: left;
+  height: 10rem;
+
+  div {
+    height: 10rem;
+    background-color: #ab82ff;
+  }
 }
