@@ -143,6 +143,7 @@ h2 {
 
 .spacer1 {
   width: percentage(1/5);
+
   @media (min-width: 1200px) {
     width: percentage(1/12);
   }
@@ -343,7 +344,7 @@ h2 {
   flex-wrap: wrap;
 
   .about-header {
-    float: left;
+    // float: left;
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
@@ -383,7 +384,7 @@ h2 {
     }
   }
 
-  .about-text {    
+  .about-text {
     padding-left: 10px;
     padding-right: 10px;
     width: 100%;
@@ -407,6 +408,105 @@ h2 {
 
     .about-text {
       order: 2;
+    }
+  }
+}
+
+.work {
+  @include clearfix;
+  .work-header {
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 40px;
+    text-align: left;
+
+    @media (min-width: 1200px) {
+      h1 {
+        font-size: 64px;
+      }
+    }
+  }
+
+  .work-text {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: left;
+
+    @media (min-width: 700px) {
+      float: left;
+      width: percentage(3/5);
+    }
+
+    @media (min-width: 1200px) {
+      float: left;
+      width: percentage(5/12);
+    }
+  }
+
+  .cta-buttons {
+    @include clearfix;
+
+    .cta-button {
+      float: left;
+      width: percentage(2/5);
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 20px;
+
+      @media (min-width: 700px) {
+        width: percentage(2/5);
+      }
+
+      @media (min-width: 1200px) {
+        width: percentage(2/12);
+      }
+
+      div {
+        font-size: 16px;
+        font-family: "Capriola";
+        border-radius: 20px;
+        height: 60px;
+        color: #343B49;
+        background-color: #FF9104;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (min-width: 700px) {
+          font-size: 26px;
+          height: 80px;
+        }
+      }
+    }
+  }
+
+  .snowbol-image {
+    width: percentage(3/5);
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @media (min-width: 700px) {
+      width: percentage(2/5);
+      float: left;
+    }
+
+    @media (min-width: 1200px) {
+      width: percentage(4/12);
+      float: left;
+    }
+
+    .owl {
+      float: left;
+      border-radius: 20px;
+      overflow: hidden;
+
+      img {
+        width: percentage(1);
+      }
     }
   }
 }
