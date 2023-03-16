@@ -160,56 +160,118 @@ h1 {
 
 .splash {
   @include clearfix;
-}
 
-.splash-image {
-  @include clearfix;
-  width: percentage(3/5);
-  padding-left: 10px;
-  padding-right: 10px;
-  float: none;
-  filter: drop-shadow(6px 6px 4px #292D38);
-
-  @media (min-width: 1200px) {
-    width: percentage(3/12);
-    float: left;
+  @media (min-width: 700px) {
+    margin-bottom: 80px;
   }
 
+  .splash-image {
+    @include clearfix;
+    width: percentage(3/5);
+    padding-left: 10px;
+    padding-right: 10px;
+    float: none;
+    filter: drop-shadow(6px 6px 4px #292D38);
 
-  .owl {
+    @media (min-width: 1200px) {
+      width: percentage(3/12);
+      float: left;
+    }
+
+
+    .owl {
+      float: left;
+      border-radius: 20px;
+      overflow: hidden;
+
+      img {
+        width: percentage(1);
+      }
+    }
+  }
+
+  .splash-spacer {
     float: left;
-    border-radius: 20px;
-    overflow: hidden;
+    height: 200px;
+    visibility: hidden;
+    display: none;
 
-    img {
-      width: percentage(1);
+    @media (min-width: 1200px) {
+      width: percentage(2/12);
+      visibility: visible;
+      display: block;
+    }
+  }
+
+  .intro-text {
+    width: percentage(5/5);
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 24px;
+
+    @media (min-width: 1200px) {
+      float: left;
+      width: percentage(5/12);
+      font-size: 32px;
     }
   }
 }
 
-.splash-spacer {
-  float: left;
-  height: 200px;
-  visibility: hidden;
-  display: none;
+.cta-buttons {
+  @include clearfix;
 
-  @media (min-width: 1200px) {
-    width: percentage(2/12);
-    visibility: visible;
-    display: block;
-  }
-}
-
-.intro-text {
-  width: percentage(5/5);
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 24px;
-
-  @media (min-width: 1200px) {
+  .cta-buttons-spacer {
+    // display: none;
+    // visibility: hidden;
+    width: percentage(1/5);
     float: left;
-    width: percentage(5/12);
-    font-size: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 200px;
+
+    @media (min-width: 700px) {
+      width: percentage(1/5);
+      display: block;
+      visibility: visible;
+    }
+
+    @media (min-width: 1200px) {
+      width: percentage(7/12);
+      display: block;
+      visibility: visible;
+    }
+  }
+
+  .cta-button {
+    float: left;
+    width: percentage(2/5);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+
+    @media (min-width: 700px) {
+      width: percentage(2/5);
+    }
+
+    @media (min-width: 1200px) {
+      width: percentage(2/12);
+    }
+
+    div {
+      font-size: 16px;
+      border-radius: 20px;
+      height: 60px;
+      color: #343B49;
+      background-color: #FF9104;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (min-width: 700px) {
+        font-size: 26px;
+        height: 80px;
+      }
+    }
   }
 }
 
