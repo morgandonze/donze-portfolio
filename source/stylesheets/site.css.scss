@@ -141,8 +141,15 @@ h2 {
   }
 }
 
+.spacer1 {
+  width: percentage(1/5);
+  @media (min-width: 1200px) {
+    width: percentage(1/12);
+  }
+}
+
 .main {
-  display: none;
+  // display: none;
   margin-bottom: 20px;
 
   .main-header {
@@ -361,7 +368,8 @@ h2 {
     }
 
     @media (min-width: 1200px) {
-      width: percentage(5/12);
+      width: percentage(4/12);
+      float: left;
     }
 
     .owl {
@@ -378,6 +386,8 @@ h2 {
   .about-text {    
     padding-left: 10px;
     padding-right: 10px;
+    width: 100%;
+    text-align: left;
 
     @media (min-width: 700px) {
       float: left;
@@ -386,7 +396,7 @@ h2 {
 
     @media (min-width: 1200px) {
       float: left;
-      width: percentage(4/12);
+      width: percentage(5/12);
     }
   }
 
