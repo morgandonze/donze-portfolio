@@ -29,7 +29,7 @@ body {
   text-align: center;
   font-size: 24px;
 
-  @media (min-size: 700px) {
+  @media (min-width: 700px) {
     font-size: 32px;
   }
 }
@@ -47,6 +47,7 @@ h1 {
   font-family: 'Capriola', sans-serif;
   font-size: 32px;
   color: #ab82ff;
+  margin-bottom: 0px;
 
   @media (min-width: 700px) {
     font-size: 48px;
@@ -111,12 +112,22 @@ h1 {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 20px;
+
+  @media (min-width: 700px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .header {
   @include clearfix;
   display: flex;
   align-items: baseline;
+  margin-bottom: 40px;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 100px;
+  }
 }
 
 .title {
@@ -160,6 +171,7 @@ h1 {
 
 .splash {
   @include clearfix;
+  margin-bottom: 80px;
 
   @media (min-width: 700px) {
     margin-bottom: 80px;
@@ -173,9 +185,13 @@ h1 {
     float: none;
     filter: drop-shadow(6px 6px 4px #292D38);
 
-    @media (min-width: 1200px) {
-      width: percentage(3/12);
+    @media (min-width: 700px) {
+      width: percentage(2/5);
       float: left;
+    }
+
+    @media (min-width: 1200px) {
+      width: percentage(4/12);
     }
 
 
@@ -196,10 +212,14 @@ h1 {
     visibility: hidden;
     display: none;
 
-    @media (min-width: 1200px) {
-      width: percentage(2/12);
+    @media (min-width: 700px) {
+      width: percentage(1/5);
       visibility: visible;
       display: block;
+    }
+
+    @media (min-width: 1200px) {
+      width: percentage(1/12);
     }
   }
 
@@ -208,9 +228,13 @@ h1 {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 24px;
+    margin-bottom: 40px;
+
+    @media (min-width: 700px) {
+      float: left;
+    }
 
     @media (min-width: 1200px) {
-      float: left;
       width: percentage(5/12);
       font-size: 32px;
     }
@@ -259,6 +283,7 @@ h1 {
 
     div {
       font-size: 16px;
+      font-family: "Capriola";
       border-radius: 20px;
       height: 60px;
       color: #343B49;
@@ -279,23 +304,24 @@ h1 {
 
 .grid {
   @include clearfix;
-}
+  // display: none;
 
-.column {
-  @include clearfix;
-  padding-right: 10px;
-  padding-left: 10px;
-  margin-bottom: 10px;
-  float: left;
-  height: 10rem;
-  width: percentage(1/5);
-
-  @media (min-width: 1200px) {
-    width: percentage(1/12);
-  }
-
-  div {
+  .column {
+    @include clearfix;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    float: left;
     height: 10rem;
-    background-color: #ab82ff;
+    width: percentage(1/5);
+
+    @media (min-width: 1200px) {
+      width: percentage(1/12);
+    }
+
+    div {
+      height: 10rem;
+      background-color: #ab82ff;
+    }
   }
 }
