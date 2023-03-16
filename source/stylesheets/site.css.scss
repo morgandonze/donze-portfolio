@@ -142,7 +142,9 @@ h2 {
 }
 
 .spacer1 {
+  float: left;
   width: percentage(1/5);
+  height: 200px;
 
   @media (min-width: 1200px) {
     width: percentage(1/12);
@@ -342,6 +344,7 @@ h2 {
 .about {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 200px;
 
   .about-header {
     // float: left;
@@ -359,7 +362,7 @@ h2 {
   }
 
   .about-image {
-    width: percentage(3/5);
+    width: percentage(4/5);
     padding-left: 10px;
     padding-right: 10px;
 
@@ -389,15 +392,19 @@ h2 {
     padding-right: 10px;
     width: 100%;
     text-align: left;
+    font-size: 18px;
+    font-family: "Varela";
 
     @media (min-width: 700px) {
       float: left;
       width: percentage(3/5);
+      font-size: 24px;
     }
 
     @media (min-width: 1200px) {
       float: left;
       width: percentage(5/12);
+      font-size: 32px;
     }
   }
 
@@ -414,27 +421,33 @@ h2 {
 
 .work {
   @include clearfix;
+  display: block;
+  flex-wrap: nowrap;
+
   .work-header {
-    float: left;
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-align: left;
 
     @media (min-width: 1200px) {
+      margin-bottom: 40px;
+
       h1 {
         font-size: 64px;
       }
     }
   }
 
-  .work-text {
+  .snowbol-cta {
+    @include clearfix;
+    width: 100%;
+    float: left;
     padding-left: 10px;
     padding-right: 10px;
-    width: 100%;
     margin-bottom: 40px;
-    text-align: left;
+    font-size: 20px;
 
     @media (min-width: 700px) {
       float: left;
@@ -445,10 +458,20 @@ h2 {
       float: left;
       width: percentage(5/12);
     }
-  }
 
-  .cta-buttons {
-    @include clearfix;
+    h1 {
+      text-align: left;
+      color: #fff;
+      font-size: 28px;
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+
+    .work-text {
+      text-align: left;
+      width: percentage(4/5);
+      margin-bottom: 40px;
+    }
 
     .cta-button {
       float: left;
@@ -457,13 +480,13 @@ h2 {
       padding-right: 10px;
       margin-bottom: 20px;
 
-      @media (min-width: 700px) {
-        width: percentage(2/5);
-      }
+      //   @media (min-width: 700px) {
+      //     width: percentage(2/5);
+      //   }
 
-      @media (min-width: 1200px) {
-        width: percentage(2/12);
-      }
+      //   @media (min-width: 1200px) {
+      //     width: percentage(2/12);
+      //   }
 
       div {
         font-size: 16px;
@@ -485,6 +508,8 @@ h2 {
   }
 
   .snowbol-image {
+    @include clearfix;
+    float: left;
     width: percentage(3/5);
     padding-left: 10px;
     padding-right: 10px;
@@ -499,7 +524,7 @@ h2 {
       float: left;
     }
 
-    .owl {
+    div {
       float: left;
       border-radius: 20px;
       overflow: hidden;
@@ -514,8 +539,8 @@ h2 {
 // GRID
 
 .grid {
-  @include clearfix;
-  // display: none;
+  // @include clearfix;
+  display: none;
 
   .column {
     @include clearfix;
