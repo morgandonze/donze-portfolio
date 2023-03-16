@@ -20,13 +20,18 @@ html {
 
 body {
   background-color: #343B49;
-  color: #ab82ff;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+  color: #fff;
+  font-family: "Varela", sans-serif, -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans";
   // padding: 18vh 1rem;
   text-align: center;
+  font-size: 24px;
+
+  @media (min-size: 700px) {
+    font-size: 32px;
+  }
 }
 
 a {
@@ -40,19 +45,78 @@ a {
 
 h1 {
   font-family: 'Capriola', sans-serif;
-  font-size: 80px;
+  font-size: 32px;
+  color: #ab82ff;
+
+  @media (min-width: 700px) {
+    font-size: 48px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 80px;
+  }
 }
+
+// Media-specific visibility
+
+@media (max-width: 700px) {
+  .mobile-only {
+    display: block !important;
+  }
+
+  .tablet-only {
+    display: none !important;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+@media (min-width: 700px) {
+  .mobile-only {
+    display: none !important;
+  }
+
+  .desktop-only {
+    display: none !important;
+    visibility: hidden;
+  }
+
+  .tablet-only {
+    display: block !important;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .mobile-only {
+    display: none !important;
+  }
+
+  .tablet-only {
+    display: none !important;
+  }
+
+  .desktop-only {
+    display: block !important;
+    visibility: visible;
+  }
+}
+
+// Main Styles
 
 .l-wrap {
   max-width: 90rem;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 20px;
 }
 
 .header {
   @include clearfix;
   display: flex;
-  align-items: baseline; 
+  align-items: baseline;
 }
 
 .title {
@@ -68,16 +132,84 @@ h1 {
   width: percentage(3/12);
   padding-right: 10px;
   padding-left: 10px;
-  
+
+
+  @media (min-width: 700px) {}
+
+  @media (min-width: 1200px) {}
+
   div {
     float: right;
 
     a {
       font-family: 'Capriola', sans-serif;
-      font-size: 40px;
       float: left;
       margin-left: 20px;
+      font-size: 32px;
+
+      @media (min-width: 1200px) {
+        font-size: 36px;
+      }
+
+      @media (min-width: 700px) and (max-width: 1200px) {
+        font-size: 18px;
+      }
     }
+  }
+}
+
+.splash {
+  @include clearfix;
+}
+
+.splash-image {
+  @include clearfix;
+  width: percentage(3/5);
+  padding-left: 10px;
+  padding-right: 10px;
+  float: none;
+  filter: drop-shadow(6px 6px 4px #292D38);
+
+  @media (min-width: 1200px) {
+    width: percentage(3/12);
+    float: left;
+  }
+
+
+  .owl {
+    float: left;
+    border-radius: 20px;
+    overflow: hidden;
+
+    img {
+      width: percentage(1);
+    }
+  }
+}
+
+.splash-spacer {
+  float: left;
+  height: 200px;
+  visibility: hidden;
+  display: none;
+
+  @media (min-width: 1200px) {
+    width: percentage(2/12);
+    visibility: visible;
+    display: block;
+  }
+}
+
+.intro-text {
+  width: percentage(5/5);
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 24px;
+
+  @media (min-width: 1200px) {
+    float: left;
+    width: percentage(5/12);
+    font-size: 32px;
   }
 }
 
@@ -89,11 +221,16 @@ h1 {
 
 .column {
   @include clearfix;
-  width: percentage(1/12);
   padding-right: 10px;
   padding-left: 10px;
+  margin-bottom: 10px;
   float: left;
   height: 10rem;
+  width: percentage(1/5);
+
+  @media (min-width: 1200px) {
+    width: percentage(1/12);
+  }
 
   div {
     height: 10rem;
