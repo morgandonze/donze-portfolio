@@ -58,23 +58,25 @@ title: Welcome to Middleman
       </div>
 
       <div class="cta-button">
-        <div>
-          Read more
-        </div>
+        <a href="#about">
+          <div>
+            Read more
+          </div>
+        </a>
       </div>
 
       <div class="cta-button">
-        <div>
-          <a href="https://twitter.com/morgan_donze">
+        <a href="#contact">
+          <div>
             Contact
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
     </div>
     <!-- cta-buttons -->
   </div>
   <!--- main section --> <!-- About section -->
-  <div class="about">
+  <div class="about" id="about">
     <div class="about-header">
       <h1>About Morgan</h1>
     </div>
@@ -131,13 +133,37 @@ title: Welcome to Middleman
     </div>
   </div>
 
-  <div class="contact-section">
+  <div class="contact-section" id="contact">
     <div class="contact-title">
       <h1>Talk to me!</h1>
     </div>
 
     <div class="contact-form">
       <div id="wufoo-z1lqyhmr113o6hw"> Fill out my <a href="https://morgumi.wufoo.com/forms/z1lqyhmr113o6hw">online form</a>. </div> <script type="text/javascript"> var z1lqyhmr113o6hw; (function(d, t) { var s = d.createElement(t), options = { 'userName':'morgumi', 'formHash':'z1lqyhmr113o6hw', 'autoResize':true, 'height':'520', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { z1lqyhmr113o6hw = new WufooForm(); z1lqyhmr113o6hw.initialize(options); z1lqyhmr113o6hw.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
+    </div>
+
+    <div class="spacer1"></div>
+
+    <div class="contact-detail">
+      <div>
+        <p>
+          I'm open to new opportunities and projects! Let's get in touch!
+        </p>
+
+        <div class="contact-social-icons">
+          <a href="https://github.com/morgandonze">
+            <img src="/images/icons/github/github.svg"/>
+          </a>
+          
+          <a href="https://twitter.com/morgan_donze">
+            <img src="/images/icons/twitter/twitter.svg"/>
+          </a>
+
+          <a href="https://www.linkedin.com/in/morgandonze">
+            <img src="/images/icons/linkedin/linkedin.svg"/>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </div>

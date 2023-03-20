@@ -33,13 +33,24 @@ body {
 }
 
 a {
-  color: #ab82ff;
+  color: #343B49;
 
   &:focus,
   &:hover {
     color: #ab82ff;
   }
 }
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
 
 h1,
 h2 {
@@ -182,6 +193,11 @@ h2 {
 
       @media (min-width: 1200px) {}
 
+      a {
+        color: #ab82ff;
+      }
+
+
       div {
         float: right;
 
@@ -310,6 +326,8 @@ h2 {
       padding-left: 10px;
       padding-right: 10px;
       margin-bottom: 20px;
+
+      color: #343B49;
 
       @media (min-width: 700px) {
         width: percentage(2/5);
@@ -540,12 +558,19 @@ h2 {
   flex-wrap: nowrap;
 
   .contact-form {
+    float: left;
     @media (min-width: 1200px) {
       width: percentage(5/12);
     }
   }
 
   .contact-title {
+    float: left;
+    width: 100%;
+    text-align: left;
+  }
+
+  .contact-detail {
     float: left;
     width: percentage(4/12);
     text-align: left;
@@ -555,8 +580,9 @@ h2 {
 // GRID
 
 .grid {
+  display: none;
+
   // @include clearfix;
-  // display: none;
 
   .column {
     @include clearfix;
