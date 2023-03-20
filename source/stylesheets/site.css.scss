@@ -534,11 +534,29 @@ h2 {
   }
 }
 
+.contact-section {
+  @include clearfix;
+  display: block;
+  flex-wrap: nowrap;
+
+  .contact-form {
+    @media (min-width: 1200px) {
+      width: percentage(5/12);
+    }
+  }
+
+  .contact-title {
+    float: left;
+    width: percentage(4/12);
+    text-align: left;
+  }
+}
+
 // GRID
 
 .grid {
   // @include clearfix;
-  display: none;
+  // display: none;
 
   .column {
     @include clearfix;
