@@ -1,3 +1,159 @@
+// "Lexend", "Space Grotesk", "Josefin Sans", "Quicksand", "Varela", 
+$header-font-stack: "Lexend", "Space Grotesk", sans-serif, -apple-system;
+$header-font-weight: 100;
+$header-mobile-font-weight: 300;
+$link-font-stack: "Lexend", "Space Grotesk", sans-serif, -apple-system;
+$link-font-weight: 200;
+$btn-font-weight: 400;
+$base-font-stack: "Lexend", "Space Grotesk", "Nunito Sans", sans-serif, -apple-system;
+$base-font-weight: 100;
+
+// Fonts
+
+// Space Grotesk
+// todo change nacelle in src
+
+@font-face {
+  font-family: Space Grotesk;
+  src: url("/fonts/Space_Grotesk/static/SpaceGrotesk-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Space Grotesk;
+  font-weight: 100;
+  src: url("/fonts/Space_Grotesk/static/SpaceGrotesk-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Space Grotesk;
+  font-weight: 500;
+  src: url("/fonts/Space_Grotesk/static/SpaceGrotesk-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Space Grotesk;
+  font-weight: 600;
+  src: url("/fonts/Space_Grotesk/static/SpaceGrotesk-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Space Grotesk;
+  font-weight: 700;
+  src: url("/fonts/Space_Grotesk/static/SpaceGrotesk-Bold.ttf") format("truetype");
+}
+
+// Lexend
+
+@font-face {
+  font-family: Lexend;
+  font-weight: 100;
+  src: url("/fonts/Lexend/static/Lexend-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Lexend;
+  font-weight: 200;
+  src: url("/fonts/Lexend/static/Lexend-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Lexend;
+  font-weight: 300;
+  src: url("/fonts/Lexend/static/Lexend-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Lexend;
+  src: url("/fonts/Lexend/static/Lexend-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Lexend;
+  font-weight: 500;
+  src: url("/fonts/Lexend/static/Lexend-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Lexend;
+  font-weight: 600;
+  src: url("/fonts/Lexend/static/Lexend-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Lexend;
+  font-weight: 700;
+  src: url("/fonts/Lexend/static/Lexend-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Lexend;
+  font-weight: 800;
+  src: url("/fonts/Lexend/static/Lexend-ExtraBold.ttf") format("truetype");
+}
+
+
+@mixin clearfix {
+  &:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+
+// Nacelle
+
+@font-face {
+  font-family: Nacelle;
+  src: url("/fonts/nacelle_100/Nacelle-UltraLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Nacelle;
+  font-weight: thin;
+  src: url("/fonts/nacelle_100/Nacelle-Thin.otf") format("opentype");
+}
+
+
+@font-face {
+  font-family: Nacelle;
+  font-weight: extra light;
+  src: url("/fonts/nacelle_100/Nacelle-UltraLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Nacelle;
+  font-weight: normal;
+  src: url("/fonts/nacelle_100/Nacelle-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Nacelle;
+  font-weight: medium;
+  src: url("/fonts/nacelle_100/Nacelle-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Nacelle;
+  font-weight: semi bold;
+  src: url("/fonts/nacelle_100/Nacelle-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Nacelle;
+  font-weight: bold;
+  src: url("/fonts/nacelle_100/Nacelle-Bold.otf") format("opentype");
+}
+
+
+@font-face {
+  font-family: Nacelle;
+  font-weight: extra bold;
+  src: url("/fonts/nacelle_100/Nacelle-Heavy.otf") format("opentype");
+}
+
+
+// Styles
+
 @mixin clearfix {
   &:after {
     display: table;
@@ -19,11 +175,8 @@ html {
 body {
   background-color: #343B49;
   color: #fff;
-  font-family: "Varela", sans-serif, -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans";
-  // padding: 18vh 1rem;
+  font-family: $base-font-stack;
+  font-weight: $base-font-weight;
   text-align: center;
   font-size: 24px;
   margin: 0px;
@@ -67,7 +220,13 @@ a:active {
 
 h1,
 h2 {
-  font-family: 'Capriola', sans-serif;
+  font-family: $header-font-stack;
+  
+  font-weight: $header-mobile-font-weight;
+  @media (min-width: 1200) {
+    font-weight: $header-font-weight;
+  }
+
   color: #ab82ff;
   margin-bottom: 0px;
 
@@ -89,7 +248,8 @@ h1 {
 }
 
 h2 {
-  font-family: 'Capriola', sans-serif;
+  font-family: $header-font-stack;
+  font-weight: $header-font-weight;
   font-size: 28px;
   color: #ab82ff;
   margin-bottom: 0px;
@@ -211,7 +371,8 @@ h2 {
         float: right;
 
         a {
-          font-family: 'Capriola', sans-serif;
+          font-family: $link-font-stack;
+          font-weight: $link-font-weight;
           float: left;
           margin-left: 20px;
           font-size: 32px;
@@ -307,6 +468,8 @@ h2 {
 
   .cta-buttons {
     @include clearfix;
+    font-family: $link-font-stack;
+    font-weight: $link-font-weight;
 
     a {
       color: #343B49;
@@ -366,7 +529,8 @@ h2 {
 
       div {
         font-size: 16px;
-        font-family: "Capriola";
+        font-family: $link-font-stack;
+        font-weight: $btn-font-weight;
         border-radius: 20px;
         height: 60px;
         color: #343B49;
@@ -443,7 +607,8 @@ h2 {
     width: 100%;
     text-align: left;
     font-size: 18px;
-    font-family: "Varela";
+    font-family: $base-font-stack;
+    font-weight: $base-font-weight;
 
     @media (min-width: 700px) {
       float: left;
@@ -540,7 +705,8 @@ h2 {
 
       div {
         font-size: 16px;
-        font-family: "Capriola";
+        font-family: $base-font-stack;
+        font-weight: $btn-font-weight;
         border-radius: 20px;
         height: 60px;
         color: #343B49;
@@ -626,7 +792,8 @@ h2 {
 // FOOTER
 
 .footer {
-  font-family: "Varela";
+  font-family: $base-font-stack;
+  font-weight: $base-font-weight;
   font-size: 12px;
   left: 0;
   bottom: 0;
