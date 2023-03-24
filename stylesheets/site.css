@@ -1,104 +1,104 @@
 @font-face {
   font-family: Space Grotesk;
-  src: url("/fonts/Space_Grotesk/static/SpaceGrotesk-Regular.ttf") format("truetype"); }
+  src: url("/donze-portfolio/fonts/Space_Grotesk/static/SpaceGrotesk-Regular.ttf") format("truetype"); }
 
 @font-face {
   font-family: Space Grotesk;
   font-weight: 100;
-  src: url("/fonts/Space_Grotesk/static/SpaceGrotesk-Light.ttf") format("truetype"); }
+  src: url("/donze-portfolio/fonts/Space_Grotesk/static/SpaceGrotesk-Light.ttf") format("truetype"); }
 
 @font-face {
   font-family: Space Grotesk;
   font-weight: 500;
-  src: url("/fonts/Space_Grotesk/static/SpaceGrotesk-Medium.ttf") format("truetype"); }
+  src: url("/donze-portfolio/fonts/Space_Grotesk/static/SpaceGrotesk-Medium.ttf") format("truetype"); }
 
 @font-face {
   font-family: Space Grotesk;
   font-weight: 600;
-  src: url("/fonts/Space_Grotesk/static/SpaceGrotesk-SemiBold.ttf") format("truetype"); }
+  src: url("/donze-portfolio/fonts/Space_Grotesk/static/SpaceGrotesk-SemiBold.ttf") format("truetype"); }
 
 @font-face {
   font-family: Space Grotesk;
   font-weight: 700;
-  src: url("/fonts/Space_Grotesk/static/SpaceGrotesk-Bold.ttf") format("truetype"); }
+  src: url("/donze-portfolio/fonts/Space_Grotesk/static/SpaceGrotesk-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: Lexend;
   font-weight: 100;
-  src: url("/fonts/Lexend/static/Lexend-Thin.ttf") format("truetype"); }
+  src: url("/donze-portfolio/fonts/Lexend/static/Lexend-Thin.ttf") format("truetype"); }
 
 @font-face {
   font-family: Lexend;
   font-weight: 200;
-  src: url("/fonts/Lexend/static/Lexend-ExtraLight.ttf") format("truetype"); }
+  src: url("/donze-portfolio/fonts/Lexend/static/Lexend-ExtraLight.ttf") format("truetype"); }
 
 @font-face {
   font-family: Lexend;
   font-weight: 300;
-  src: url("/fonts/Lexend/static/Lexend-Light.ttf") format("truetype"); }
+  src: url("/donze-portfolio/fonts/Lexend/static/Lexend-Light.ttf") format("truetype"); }
 
 @font-face {
   font-family: Lexend;
-  src: url("/fonts/Lexend/static/Lexend-Regular.ttf") format("truetype"); }
+  src: url("/donze-portfolio/fonts/Lexend/static/Lexend-Regular.ttf") format("truetype"); }
 
 @font-face {
   font-family: Lexend;
   font-weight: 500;
-  src: url("/fonts/Lexend/static/Lexend-Medium.ttf") format("truetype"); }
+  src: url("/donze-portfolio/fonts/Lexend/static/Lexend-Medium.ttf") format("truetype"); }
 
 @font-face {
   font-family: Lexend;
   font-weight: 600;
-  src: url("/fonts/Lexend/static/Lexend-SemiBold.ttf") format("truetype"); }
+  src: url("/donze-portfolio/fonts/Lexend/static/Lexend-SemiBold.ttf") format("truetype"); }
 
 @font-face {
   font-family: Lexend;
   font-weight: 700;
-  src: url("/fonts/Lexend/static/Lexend-Bold.ttf") format("truetype"); }
+  src: url("/donze-portfolio/fonts/Lexend/static/Lexend-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: Lexend;
   font-weight: 800;
-  src: url("/fonts/Lexend/static/Lexend-ExtraBold.ttf") format("truetype"); }
+  src: url("/donze-portfolio/fonts/Lexend/static/Lexend-ExtraBold.ttf") format("truetype"); }
 
 @font-face {
   font-family: Nacelle;
-  src: url("/fonts/nacelle_100/Nacelle-UltraLight.otf") format("opentype"); }
+  src: url("/donze-portfolio/fonts/nacelle_100/Nacelle-UltraLight.otf") format("opentype"); }
 
 @font-face {
   font-family: Nacelle;
   font-weight: thin;
-  src: url("/fonts/nacelle_100/Nacelle-Thin.otf") format("opentype"); }
+  src: url("/donze-portfolio/fonts/nacelle_100/Nacelle-Thin.otf") format("opentype"); }
 
 @font-face {
   font-family: Nacelle;
   font-weight: extra light;
-  src: url("/fonts/nacelle_100/Nacelle-UltraLight.otf") format("opentype"); }
+  src: url("/donze-portfolio/fonts/nacelle_100/Nacelle-UltraLight.otf") format("opentype"); }
 
 @font-face {
   font-family: Nacelle;
   font-weight: normal;
-  src: url("/fonts/nacelle_100/Nacelle-Regular.otf") format("opentype"); }
+  src: url("/donze-portfolio/fonts/nacelle_100/Nacelle-Regular.otf") format("opentype"); }
 
 @font-face {
   font-family: Nacelle;
   font-weight: medium;
-  src: url("/fonts/nacelle_100/Nacelle-Regular.otf") format("opentype"); }
+  src: url("/donze-portfolio/fonts/nacelle_100/Nacelle-Regular.otf") format("opentype"); }
 
 @font-face {
   font-family: Nacelle;
   font-weight: semi bold;
-  src: url("/fonts/nacelle_100/Nacelle-SemiBold.otf") format("opentype"); }
+  src: url("/donze-portfolio/fonts/nacelle_100/Nacelle-SemiBold.otf") format("opentype"); }
 
 @font-face {
   font-family: Nacelle;
   font-weight: bold;
-  src: url("/fonts/nacelle_100/Nacelle-Bold.otf") format("opentype"); }
+  src: url("/donze-portfolio/fonts/nacelle_100/Nacelle-Bold.otf") format("opentype"); }
 
 @font-face {
   font-family: Nacelle;
   font-weight: extra bold;
-  src: url("/fonts/nacelle_100/Nacelle-Heavy.otf") format("opentype"); }
+  src: url("/donze-portfolio/fonts/nacelle_100/Nacelle-Heavy.otf") format("opentype"); }
 
 html {
   -webkit-box-sizing: border-box;
