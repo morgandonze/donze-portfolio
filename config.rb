@@ -13,6 +13,14 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+configure :build do
+  config[:resource_prefix] = "/donze-portfolio"
+end
+
+configure :development do
+  config[:resource_prefix] = ""
+end
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
