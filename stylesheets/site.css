@@ -1,0 +1,591 @@
+@font-face {
+  font-family: Space Grotesk;
+  src: url("/fonts/Space_Grotesk/static/SpaceGrotesk-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Space Grotesk;
+  font-weight: 100;
+  src: url("/fonts/Space_Grotesk/static/SpaceGrotesk-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Space Grotesk;
+  font-weight: 500;
+  src: url("/fonts/Space_Grotesk/static/SpaceGrotesk-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Space Grotesk;
+  font-weight: 600;
+  src: url("/fonts/Space_Grotesk/static/SpaceGrotesk-SemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Space Grotesk;
+  font-weight: 700;
+  src: url("/fonts/Space_Grotesk/static/SpaceGrotesk-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Lexend;
+  font-weight: 100;
+  src: url("/fonts/Lexend/static/Lexend-Thin.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Lexend;
+  font-weight: 200;
+  src: url("/fonts/Lexend/static/Lexend-ExtraLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Lexend;
+  font-weight: 300;
+  src: url("/fonts/Lexend/static/Lexend-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Lexend;
+  src: url("/fonts/Lexend/static/Lexend-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Lexend;
+  font-weight: 500;
+  src: url("/fonts/Lexend/static/Lexend-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Lexend;
+  font-weight: 600;
+  src: url("/fonts/Lexend/static/Lexend-SemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Lexend;
+  font-weight: 700;
+  src: url("/fonts/Lexend/static/Lexend-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Lexend;
+  font-weight: 800;
+  src: url("/fonts/Lexend/static/Lexend-ExtraBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Nacelle;
+  src: url("/fonts/nacelle_100/Nacelle-UltraLight.otf") format("opentype"); }
+
+@font-face {
+  font-family: Nacelle;
+  font-weight: thin;
+  src: url("/fonts/nacelle_100/Nacelle-Thin.otf") format("opentype"); }
+
+@font-face {
+  font-family: Nacelle;
+  font-weight: extra light;
+  src: url("/fonts/nacelle_100/Nacelle-UltraLight.otf") format("opentype"); }
+
+@font-face {
+  font-family: Nacelle;
+  font-weight: normal;
+  src: url("/fonts/nacelle_100/Nacelle-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: Nacelle;
+  font-weight: medium;
+  src: url("/fonts/nacelle_100/Nacelle-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: Nacelle;
+  font-weight: semi bold;
+  src: url("/fonts/nacelle_100/Nacelle-SemiBold.otf") format("opentype"); }
+
+@font-face {
+  font-family: Nacelle;
+  font-weight: bold;
+  src: url("/fonts/nacelle_100/Nacelle-Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: Nacelle;
+  font-weight: extra bold;
+  src: url("/fonts/nacelle_100/Nacelle-Heavy.otf") format("opentype"); }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+body {
+  background-color: #343B49;
+  color: #fff;
+  font-family: "Lexend", "Nunito Sans", sans-serif, -apple-system;
+  font-weight: 100;
+  text-align: center;
+  font-size: 24px;
+  margin: 0px; }
+  @media (min-width: 700px) {
+    body {
+      font-size: 32px; } }
+a {
+  color: #ab82ff; }
+  a:focus, a:hover {
+    color: #9036FF; }
+    a:focus svg g path, a:hover svg g path {
+      fill: #9036FF; }
+
+a:link {
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+a:active {
+  text-decoration: none; }
+
+h1,
+h2 {
+  font-family: "Lexend", sans-serif, -apple-system;
+  font-weight: 300;
+  color: #ab82ff;
+  margin-bottom: 0px; }
+  @media (min-width: 1200) {
+    h1,
+    h2 {
+      font-weight: 100; } }
+  @media (min-width: 700px) {
+    h1,
+    h2 {
+      font-size: 48px; } }
+  @media (min-width: 1200px) {
+    h1,
+    h2 {
+      font-size: 80px; } }
+h1 {
+  font-size: 32px; }
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 80px; } }
+h2 {
+  font-family: "Lexend", sans-serif, -apple-system;
+  font-weight: 100;
+  font-size: 28px;
+  color: #ab82ff;
+  margin-bottom: 0px; }
+  @media (min-width: 700px) {
+    h2 {
+      font-size: 48px; } }
+  @media (min-width: 1200px) {
+    h2 {
+      font-size: 80px; } }
+@media (max-width: 700px) {
+  .mobile-only {
+    display: block !important; }
+  .tablet-only {
+    display: none !important; }
+  .desktop-only {
+    display: none !important; } }
+
+@media (min-width: 700px) {
+  .mobile-only {
+    display: none !important; }
+  .desktop-only {
+    display: none !important;
+    visibility: hidden; }
+  .tablet-only {
+    display: block !important; } }
+
+@media (min-width: 1200px) {
+  .mobile-only {
+    display: none !important; }
+  .tablet-only {
+    display: none !important; }
+  .desktop-only {
+    display: block !important;
+    visibility: visible; } }
+
+.l-wrap {
+  max-width: 90rem;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 700px) {
+    .l-wrap {
+      padding-left: 20px;
+      padding-right: 20px; } }
+.spacer1 {
+  float: left;
+  width: 20%;
+  height: 200px; }
+  @media (min-width: 1200px) {
+    .spacer1 {
+      width: 8.3333333333%; } }
+.main {
+  margin-bottom: 20px; }
+  .main .main-header {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 40px; }
+    .main .main-header:after {
+      display: table;
+      clear: both;
+      content: ''; }
+    @media (min-width: 1200px) {
+      .main .main-header {
+        margin-bottom: 100px; } }
+    .main .main-header .site-title {
+      width: 75%;
+      padding-right: 10px;
+      padding-left: 10px;
+      float: left;
+      text-align: left; }
+    .main .main-header .nav {
+      width: 25%;
+      padding-right: 10px;
+      padding-left: 10px; }
+      .main .main-header .nav:after {
+        display: table;
+        clear: both;
+        content: ''; }
+      .main .main-header .nav div {
+        float: right; }
+        .main .main-header .nav div a {
+          font-family: "Lexend", sans-serif, -apple-system;
+          font-weight: 200;
+          float: left;
+          margin-left: 20px;
+          font-size: 32px; }
+          @media (min-width: 1200px) {
+            .main .main-header .nav div a {
+              font-size: 36px; } }
+          @media (min-width: 700px) and (max-width: 1200px) {
+            .main .main-header .nav div a {
+              font-size: 18px; } }
+  .main .splash {
+    margin-bottom: 40px; }
+    .main .splash:after {
+      display: table;
+      clear: both;
+      content: ''; }
+    @media (min-width: 1200px) {
+      .main .splash {
+        margin-bottom: 80px; } }
+    .main .splash .splash-image {
+      width: 60%;
+      padding-left: 10px;
+      padding-right: 10px;
+      float: none;
+      -webkit-filter: drop-shadow(6px 6px 4px #292D38);
+              filter: drop-shadow(6px 6px 4px #292D38); }
+      .main .splash .splash-image:after {
+        display: table;
+        clear: both;
+        content: ''; }
+      @media (min-width: 700px) {
+        .main .splash .splash-image {
+          width: 40%;
+          float: left; } }
+      @media (min-width: 1200px) {
+        .main .splash .splash-image {
+          width: 33.3333333333%; } }
+      .main .splash .splash-image .owl {
+        float: left;
+        border-radius: 20px;
+        overflow: hidden; }
+        .main .splash .splash-image .owl img {
+          width: 100%; }
+    .main .splash .splash-spacer {
+      float: left;
+      height: 200px;
+      visibility: hidden;
+      display: none; }
+      @media (min-width: 700px) {
+        .main .splash .splash-spacer {
+          width: 20%;
+          visibility: visible;
+          display: block; } }
+      @media (min-width: 1200px) {
+        .main .splash .splash-spacer {
+          width: 8.3333333333%; } }
+    .main .splash .intro-text {
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 24px;
+      text-align: left; }
+      @media (min-width: 700px) {
+        .main .splash .intro-text {
+          float: left; } }
+      @media (min-width: 1200px) {
+        .main .splash .intro-text {
+          width: 33.3333333333%;
+          font-size: 32px; } }
+  .main .cta-buttons {
+    font-family: "Lexend", sans-serif, -apple-system;
+    font-weight: 200; }
+    .main .cta-buttons:after {
+      display: table;
+      clear: both;
+      content: ''; }
+    .main .cta-buttons a {
+      color: #343B49; }
+      .main .cta-buttons a svg {
+        fill: #343B49; }
+      .main .cta-buttons a:focus svg, .main .cta-buttons a:hover svg {
+        color: #4C566B;
+        fill: #4C566B; }
+    .main .cta-buttons .cta-buttons-spacer {
+      width: 20%;
+      float: left;
+      padding-left: 10px;
+      padding-right: 10px;
+      height: 200px; }
+      @media (min-width: 700px) {
+        .main .cta-buttons .cta-buttons-spacer {
+          width: 20%;
+          display: block;
+          visibility: visible; } }
+      @media (min-width: 1200px) {
+        .main .cta-buttons .cta-buttons-spacer {
+          width: 58.3333333333%;
+          display: block;
+          visibility: visible; } }
+    .main .cta-buttons .cta-button {
+      float: left;
+      width: 40%;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 20px;
+      color: #343B49; }
+      @media (min-width: 700px) {
+        .main .cta-buttons .cta-button {
+          width: 40%; } }
+      @media (min-width: 1200px) {
+        .main .cta-buttons .cta-button {
+          width: 16.6666666667%; } }
+      .main .cta-buttons .cta-button div {
+        font-size: 16px;
+        font-family: "Lexend", sans-serif, -apple-system;
+        font-weight: 400;
+        border-radius: 20px;
+        height: 60px;
+        color: #343B49;
+        background-color: #FF9104;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        @media (min-width: 700px) {
+          .main .cta-buttons .cta-button div {
+            font-size: 26px;
+            height: 80px; } }
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 200px; }
+  .about .about-header {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 40px;
+    text-align: left; }
+    @media (min-width: 1200px) {
+      .about .about-header h1 {
+        font-size: 64px; } }
+  .about .about-image {
+    width: 80%;
+    padding-left: 10px;
+    padding-right: 10px; }
+    @media (min-width: 700px) {
+      .about .about-image {
+        width: 40%;
+        float: left; } }
+    @media (min-width: 1200px) {
+      .about .about-image {
+        width: 33.3333333333%;
+        float: left; } }
+    .about .about-image .owl {
+      float: left;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 272px;
+      width: 272px; }
+      @media (min-width: 1200px) {
+        .about .about-image .owl {
+          height: 440px;
+          width: 440px; } }
+      .about .about-image .owl img {
+        width: 100%; }
+  .about .about-text {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    font-family: "Lexend", "Nunito Sans", sans-serif, -apple-system;
+    font-weight: 100; }
+    @media (min-width: 700px) {
+      .about .about-text {
+        float: left;
+        width: 60%;
+        font-size: 24px; } }
+    @media (min-width: 1200px) {
+      .about .about-text {
+        float: left;
+        width: 41.6666666667%;
+        font-size: 32px; } }
+  @media (max-width: 700px) {
+    .about .about-image {
+      order: 1; }
+    .about .about-text {
+      order: 2; } }
+.work {
+  display: block;
+  flex-wrap: nowrap; }
+  .work:after {
+    display: table;
+    clear: both;
+    content: ''; }
+  .work .work-header {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    text-align: left; }
+    @media (min-width: 1200px) {
+      .work .work-header {
+        margin-bottom: 40px; }
+        .work .work-header h1 {
+          font-size: 64px; } }
+  .work .snowbol-cta {
+    width: 100%;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 40px;
+    font-size: 20px; }
+    .work .snowbol-cta:after {
+      display: table;
+      clear: both;
+      content: ''; }
+    @media (min-width: 700px) {
+      .work .snowbol-cta {
+        float: left;
+        width: 60%; } }
+    @media (min-width: 1200px) {
+      .work .snowbol-cta {
+        float: left;
+        width: 41.6666666667%; } }
+    .work .snowbol-cta h1 {
+      text-align: left;
+      color: #fff;
+      font-size: 28px;
+      margin-top: 0px;
+      margin-bottom: 20px; }
+    .work .snowbol-cta .work-text {
+      text-align: left;
+      width: 80%;
+      margin-bottom: 40px; }
+    .work .snowbol-cta .cta-button {
+      float: left;
+      width: 40%;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 20px; }
+      .work .snowbol-cta .cta-button div {
+        font-size: 16px;
+        font-family: "Lexend", "Nunito Sans", sans-serif, -apple-system;
+        font-weight: 400;
+        border-radius: 20px;
+        height: 60px;
+        color: #343B49;
+        background-color: #FF9104;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        @media (min-width: 700px) {
+          .work .snowbol-cta .cta-button div {
+            font-size: 26px;
+            height: 80px; } }
+  .work .snowbol-image {
+    float: left;
+    width: 60%;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .work .snowbol-image:after {
+      display: table;
+      clear: both;
+      content: ''; }
+    @media (min-width: 700px) {
+      .work .snowbol-image {
+        width: 40%;
+        float: left; } }
+    @media (min-width: 1200px) {
+      .work .snowbol-image {
+        width: 33.3333333333%;
+        float: left; } }
+    .work .snowbol-image div {
+      float: left;
+      border-radius: 20px;
+      overflow: hidden; }
+      .work .snowbol-image div img {
+        width: 100%; }
+
+.contact-section {
+  display: block;
+  flex-wrap: nowrap;
+  margin-bottom: 160px; }
+  .contact-section:after {
+    display: table;
+    clear: both;
+    content: ''; }
+  @media (min-width: 1200px) {
+    .contact-section {
+      margin-bottom: 200px; } }
+  .contact-section .contact-form {
+    float: left;
+    width: 100%;
+    margin-bottom: 40px; }
+    @media (min-width: 1200px) {
+      .contact-section .contact-form {
+        width: 41.6666666667%; } }
+  .contact-section .contact-title {
+    float: left;
+    width: 100%;
+    text-align: left; }
+  .contact-section .contact-detail {
+    width: 100%;
+    text-align: left; }
+    @media (min-width: 1200px) {
+      .contact-section .contact-detail {
+        width: 33.3333333333%;
+        float: left; } }
+.footer {
+  font-family: "Lexend", "Nunito Sans", sans-serif, -apple-system;
+  font-weight: 100;
+  font-size: 12px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  padding-top: 20px;
+  background-color: #292D38;
+  color: white;
+  text-align: center; }
+  @media (min-width: 1200px) {
+    .footer {
+      height: 100px; } }
+.grid {
+  display: none; }
+  .grid .column {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    float: left;
+    height: 10rem;
+    width: 20%; }
+    .grid .column:after {
+      display: table;
+      clear: both;
+      content: ''; }
+    @media (min-width: 1200px) {
+      .grid .column {
+        width: 8.3333333333%; } }
+    .grid .column div {
+      height: 10rem;
+      background-color: #ab82ff; }
